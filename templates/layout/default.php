@@ -32,6 +32,16 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+
+    <style>
+        a.MarkRyk {
+            text-decoration: none;
+            font-family: 'Teko', cursive;
+            font-size: 20px;
+            font-weight: 400;
+            color: black;
+        }
+    </style>
 </head>
 <body>
     <nav class="top-nav">
@@ -50,6 +60,13 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </div>
     </main>
     <footer>
+        <div class="container">
+            <br><br><br>
+            <p><a class="MarkRyk" href="https://github.com/markryk" target="_blank"><ion-icon name="logo-github" size="large"></ion-icon> Mark Ryk </a></p>
+        </div>
     </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
