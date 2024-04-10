@@ -24,6 +24,7 @@
             <?= $article->modified->format(DATE_RFC850) ?>
         </td>
         <td>
+            <?= $this->Html->link('View', '/articles/view/'.$article->slug, ['class' => 'button']) ?>
             <?= $this->Html->link('Edit', '/articles/edit/'.$article->slug, ['class' => 'button']) ?>
             <?= $this->Form->postLink('Delete', '/articles/delete/'.$article->slug, ['class' => 'button','confirm' => 'Are you sure?']) ?>
         </td>
