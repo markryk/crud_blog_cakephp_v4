@@ -1,3 +1,8 @@
+#### Framework instalado via Composer
+#### Após baixar o projeto, antes de abrir no navegador, rodar o comando "php composer.phar install"
+#### Coloca as informações do seu banco de dados no arquivo "config\app_local.php"
+
+
 # CakePHP Application Skeleton
 
 ![Build Status](https://github.com/cakephp/app/actions/workflows/ci.yml/badge.svg?branch=master)
