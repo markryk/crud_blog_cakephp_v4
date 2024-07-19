@@ -4,9 +4,10 @@
  * @var iterable<\App\Model\Entity\User> $users
  */
 ?>
+<h1> Users </h1>
+<?= $this->Html->link('New user', '/users/add', ['class' => 'button']); ?>
+
 <div class="users index content">
-    <?= $this->Html->link(__('New User'), ['action' => 'add'], ['class' => 'button float-right']) ?>
-    <h3><?= __('Users') ?></h3>
     <div class="table-responsive">
         <table>
             <thead>
@@ -35,6 +36,7 @@
             </tbody>
         </table>
     </div>
+
     <div class="paginator">
         <ul class="pagination">
             <?= $this->Paginator->first('<< ' . __('first')) ?>

@@ -19,10 +19,10 @@
                     <?= $this->Html->link($article->title, ['action' => 'view', $article->slug]) ?>
                 </td>
                 <td>
-                    <?= $article->created->format(DATE_RFC850) ?>
+                    <?= h($article->created) ?>
                 </td>
                 <td>
-                    <?= $article->modified->format(DATE_RFC850) ?>
+                    <?= h($article->modified) ?>
                 </td>
                 <td>
                     <?= $this->Html->link('View', '/articles/view/'.$article->slug, ['class' => 'button']) ?>
